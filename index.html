@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Snake Game</title>
+
     <link rel="stylesheet" href="./styles/loading.css">
     <link rel="stylesheet" href="./styles/style.css">
+    
 </head>
 <body>
     <div id="page-preloader" class="preloader">
@@ -15,6 +17,20 @@
     <main>
         
         <div id="game-board"></div>
+
+        <section class="parameters">
+            <div class="score text_view">
+                <p>Score:</p>
+            </div>
+            <div class="speed text_view">
+                <p>Speed:</p>
+            </div>
+            <div class="free_cells text_view">
+                <p>Free Cells:</p>
+            </div>
+        </section>
+
+        <button class="restart">Restart</button>
 
     </main>
     <script src="./js/script.js"></script>

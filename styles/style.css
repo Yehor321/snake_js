@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 main {
     display: flex;
     justify-content: center;
@@ -13,18 +17,33 @@ main.done1 {
     grid-template-columns: repeat(10, 45px);
     grid-template-rows: repeat(10, 45px);
 }
-
 .cell {
     width: 40px;
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 .snake {
     background-color: green;
 }
-
 .food {
     background-color: red;
+}
+
+
+.parameters {
+    position: absolute;
+    left: 10%;
+    margin-bottom: 15%;
+}
+.text_view{
+    font-size: 30px;
+}
+
+.restart {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
 }
