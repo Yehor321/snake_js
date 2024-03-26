@@ -40,10 +40,14 @@ main.done1 {
     font-size: 30px;
 }
 
-.restart {
+.edit_buttons {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%);
+    top: 30%;
+    right: 10%;
+}
+.button_view {
+    margin-bottom: 10%;
     font-size: 30px;
 }

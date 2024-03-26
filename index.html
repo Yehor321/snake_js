@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Snake Game</title>
 
     <link rel="stylesheet" href="./styles/loading.css">
     <link rel="stylesheet" href="./styles/style.css">
-    
+
 </head>
 <body>
     <div id="page-preloader" class="preloader">
@@ -18,19 +17,28 @@
         
         <div id="game-board"></div>
 
+
         <section class="parameters">
             <div class="score text_view">
-                <p>Score:</p>
+                <span>Score:</span> <span id="score_number">0</span>
             </div>
             <div class="speed text_view">
-                <p>Speed:</p>
+                <span>Speed:</span> <span id="speed_number">0</span>
             </div>
             <div class="free_cells text_view">
-                <p>Free Cells:</p>
+                <span>Free Cells:</span> <span id="free_cells_number">0</span>
+            </div>
+            <div class="game_time text_view">
+                <span>Time:</span> <span class="time">0</span><span>s</span>
             </div>
         </section>
 
-        <button class="restart">Restart</button>
+        <section class="edit_buttons">
+            <button class="start button_view">Start</button>
+            <button class="stop button_view">Stop</button>
+        </section>
+
+
 
     </main>
     <script src="./js/script.js"></script>
